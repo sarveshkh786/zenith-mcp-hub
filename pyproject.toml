@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zenith-mcp-hub"
+version = "0.1.0"
+description = "Universal Model Context Protocol (MCP) Server & Agentic Tool Router for Claude Code, Cursor, and Local LLMs — Built by Sarvesh Zenith (Dayal Infotech Services)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Sarvesh Zenith", email = "sarveshzenith@dayalinfotech.com" }
+]
+keywords = [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "claude-code",
+    "cursor",
+    "llm-router",
+    "python",
+    "agentic-ai"
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0",
+    "asyncio>=3.4.3"
+]
+
+[project.scripts]
+zenith-mcp-hub = "server:main"
